@@ -82,23 +82,23 @@
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
+				<p class="fimg" style="background-color:blue"></p>
 				<h5>在线办卡</h5>
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
+				<p class="fimg" style="background-color:red"></p>
 				<h5>集油点</h5>
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
-				<h5>加油卡</h5>
+				<p class="fimg" style="background-color:pink"></p>
+				<h5>爱跑98</h5>
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
-				<h5>加油卡</h5>
+				<p class="fimg" style="background-color:yellow"></p>
+				<h5>电子券</h5>
 			</li>
 			
 		
@@ -107,34 +107,81 @@
 		</ul>
 		<ul class="fivep">
 			<li>
-				<p class="fimg"></p>
-				<h5>加油卡</h5>
+				<p class="fimg" style="background-color:#d40c2e"></p>
+				<h5>生活缴费</h5>
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
-				<h5>加油卡</h5>
+				<p class="fimg" style="background-color:green"></p>
+				<h5>京东特供</h5>
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
-				<h5>加油卡</h5>
+				<p class="fimg" style="background-color:orange"></p>
+				<h5>积分商城</h5>
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
-				<h5>加油卡</h5>
+				<p class="fimg" style="background-color:red"></p>
+				<h5>领劵中心</h5>
 			</li>
 			
 			<li>
-				<p class="fimg"></p>
-				<h5>加油卡</h5>
+				<p class="fimg" style="background-color:black"></p>
+				<h5>全部</h5>
 			</li>
-			
-		
-			
-			
 		</ul>
+		<!-- 疯抢-->
+		<div class="hfeng">
+			疯抢1000元油品劵
+		</div>
+		<!-- 限时秒杀部分-->
+		<div class="hxian">
+			<div class="hsha">
+				<h6>限时秒杀</h6>
+				<p id="htime"></p>
+				<div class="hlanya">
+					<b>蓝牙音箱</b>
+					<b>运动臂包</b>
+				</div>
+			</div>
+			<div class="hzhu">
+				<h6>朱砂古镇</h6>
+				<p>领劵立减十元</p>
+				<div>朱砂古镇</div>
+			</div>
+		</div>
+		<!-- 9号会员日 -->
+		<div class="hvip">
+			<div>
+				<p></p>
+				<h6>9号会员日</h6>
+			</div>
+			<div>
+				<p style="background-color:pink"></p>
+				<h6>车主亮卡</h6>
+			</div>
+			<div>
+				<p style="background-color:orange"></p>
+				<h6>进口 9.9包邮</h6>
+			</div>
+			<div>
+				<p style="background-color:yellow"></p>
+				<h6>满99立减30</h6>
+			</div>
+		</div>
+		<!-- 热门活动 -->
+		<div class="hremen">
+			<p>---</p>
+			<h4>热门活动</h4>
+			<p>---</p>
+		</div>
+		
+		
+		
+		
+		
+		
 		</div><!-- 最外层盒子 -->
 		
 		
@@ -146,6 +193,15 @@
 		
 		<script src="../js/Jump.js"text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" charset="utf-8">
+			var htime=document.getElementById("htime");
+			var tm=61;
+			var timer=setInterval(function(){
+				tm--;
+				htime.innerHTML=tm;
+				if(tm==0){
+					tm=61;
+				}
+			},2000)
 				//获得slider插件对象
 				var gallery = mui('.mui-slider');
 				gallery.slider({
