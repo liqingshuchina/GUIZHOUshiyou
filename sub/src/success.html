@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style>
+			#miao{
+				color: #2AC845;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>修改成功<span id="miao"></span>秒后将跳转到首页!!!</h1>
+		<script type="text/javascript">
+			var miao=document.getElementById("miao");
+			var cout=6;
+			var timer=setInterval(function(){
+				cout--;
+				miao.innerHTML=cout;
+				if(cout==0){
+					clearInterval(timer);
+					location.href="../../index";
+				}
+			},1000)
+		</script>
+	</body>
+</html>

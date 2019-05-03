@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/shoplist.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav sphe">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">商品列表</h1>
+			<span id="spcha" class="mui-icon mui-icon-closeempty mui-pull-right"></span>
+			<i class="mui-icon mui-icon-reload mui-pull-right"></i>
+		</header>
+		
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			var spcha=document.getElementById("spcha");
+			spcha.onclick=function(){
+				sptip("是否关闭当前页面?");
+			}
+			function sptip(info){
+				mui.confirm(info,'提醒',['否','好的'],function (e) {
+					if(e.index==1){
+						var old_back = mui.back;  
+						mui.back = function(){  
+						//显示上一个界面；  
+						mui.currentWebview.opener().show();  
+						//继续当前页面原有返回逻辑  
+						old_back();  
+						}  
+
+					}
+				},'div')
+			}
+		</script>
+	</body>
+
+</html>

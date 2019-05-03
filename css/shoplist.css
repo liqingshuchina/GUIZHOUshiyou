@@ -1,0 +1,13 @@
+.sphe{
+	height: 50px;
+	line-height: 50px;
+}
+.sphe i{
+	color: #000000;
+	font-weight: bold;
+}
+.sphe span{
+	color: #000000;
+	font-weight: bolder;
+	font-size: 50px;
+}

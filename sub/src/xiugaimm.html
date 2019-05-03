@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/my.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">修改密码</h1>
+		</header>
+		<!-- 输入密码框 -->
+		<form class="srmima">
+			<div class="sryuan">
+				<label>原密码</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入当前密码"/ id="dang">
+			</div>
+			<div class="srxin">
+				<label>设置新密码</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入新密码"/ id="xin">
+			</div>
+			<div class="srque">
+				<label>确认新密码</label>
+				<input class="mui-input-clear" type="text" placeholder="请再次输入新密码"/ id="que">
+			</div>
+		</form>
+		<button id="submit" type="button" class="mui-btn mui-btn-blue submit">提交</button>
+		<!-- 输入密码结束 -->
+		<script type="text/javascript">
+			var submit=document.getElementById("submit");
+			var dang=document.getElementById("dang");
+			var xing=document.getElementById("xing");
+			var que=document.getElementById("que");
+			submit.onclick=function(){
+				if(dang.value==""){
+					tips("请输入内容");
+					return;
+				}
+				if(!/^1\d{4}$/.test(dang.value)){
+					tips("请输入正确密码");
+					return;
+				}
+				
+				setTimeout(function(){
+					location.href="success.html";
+				},1000)
+				
+			}
+			function tips(info){
+				mui.alert(info,'提示','OK',function (e) {
+				   e.index
+				},'div')
+			}
+		</script>
+		<script src="../../js/mui.min.js"></script>
+	</body>
+
+</html>

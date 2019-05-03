@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/my.css" rel="stylesheet" />
+		
+	</head>
+
+	<body style="background-color: #fff;margin-top: 10px;">
+		<header class="mui-bar mui-bar-nav shea">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">设置</h1>
+		</header>
+		<div class="mui-content" style="background-color: #fff;">
+    <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-12">
+			
+            <li class="a mui-table-view-cell szli" htmlName="xiugaimm.html">
+                <a>
+                   修改密码   
+                </a>
+				<a class="mui-icon mui-icon-arrowright"></a>
+            </li>
+        </div>
+        <div class="mui-col-sm-6 mui-col-xs-12">
+            <li class="mui-table-view-cell szli">
+                <a class="">
+                    清除缓存
+                </a>
+				<a >
+					2.53M
+				</a>
+            </li>
+        </div>
+		<div class="mui-col-sm-6 mui-col-xs-12">
+		    <li class="mui-table-view-cell szli">
+		        <a class="">
+		            版本更新
+		        </a>
+				<a>V3.3</a>
+		    </li>
+		</div>
+		
+    </div>
+</div>
+
+
+<button id="tantui" type="button" class="mui-btn mui-btn-blue mui-btn-block sztui">退出登录</button>
+		
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			var tantui=document.getElementById("tantui");
+			tantui.onclick=function(){
+				mui.confirm('确定退出吗?','提示',['确认','取消'],function (e) {
+					if(e.index==0){
+						location.href="../../index.html";
+					}
+				})
+			}
+		</script>
+		<script src="../../js/Jump.js"></script>
+	</body>
+
+</html>

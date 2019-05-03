@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link href="../css/home.css" rel="stylesheet"/>
+		<script src="../js/mui.min.js"text/javascript" charset="utf-8"></script>
+		
+		
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="#" class="gui">
+				<span>贵阳</span>
+				<span class="mui-icon mui-icon-arrowdown"></span>
+				
+					<span class="a mui-pull-right mui-icon mui-icon-spinner-cycle mui-spin ssao" htmlName="src/erweima.html">
+					<p>扫一扫</p>
+					</span>
+					<span class="stkong"></span>
+					<span class="mui-pull-right mui-icon mui-icon-chatboxes smes">
+						<p>消息</p>
+					</span>
+			</a>
+			<a href="#" class="guisuo">
+				<input type="text" placeholder="商品名称" id="stext"/>
+				<span id="soud" class="a mui-icon mui-icon-search" htmlName="src/sousuo.html"></span>
+			</a>
+		</header>
+		<!-- 轮播 -->
+		<div id="slider" class="mui-slider hlunbo" >
+			
+		  <div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+			  <a href="#">
+				<img src="../img/lunbo%20(3).jpg">
+			  </a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+			  <a href="#">
+				<img src="../img/lunbo%20(1).jpg">
+			  </a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+			  <a href="#">
+				<img src="../img/lunbo%20(2).jpg">
+			  </a>
+			</div>
+			<!-- 第三张 -->
+			<div class="mui-slider-item">
+			  <a href="#">
+				<img src="../img/lunbo%20(3).jpg">
+			  </a>
+			</div>
+			
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+			  <a href="#">
+				<img src="../img/lunbo%20(1).jpg">
+			  </a>
+			</div>
+		  </div>
+		  <div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			
+		  </div>
+		</div>
+		<!-- 轮播结束 -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="../js/Jump.js"text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+				//获得slider插件对象
+				var gallery = mui('.mui-slider');
+				gallery.slider({
+				  interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+				});
+				
+		</script>
+	</body>
+
+</html>
