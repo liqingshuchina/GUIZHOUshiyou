@@ -24,6 +24,7 @@
 				sptip("是否关闭当前页面?");
 			}
 			function sptip(info){
+				
 				mui.confirm(info,'提醒',['否','好的'],function (e) {
 					if(e.index==1){
 						var old_back = mui.back;  
@@ -37,6 +38,7 @@
 					}
 				},'div')
 			}
+			
 		</script>
 	</body>
 

@@ -1,0 +1,72 @@
+#xselect{
+	float: right;
+	margin-top: 12px;
+	margin-right: 15px;
+}
+.mxsel{
+	position: relative;
+	margin-top: 50px;
+	border-bottom: 1px solid #C0C0C0;
+}
+.mxbian{
+	background-color: #eee;
+	opacity: 0.3;
+}
+.mxsel input{
+	margin-top: 30px;
+	display: none;
+}
+.mxsel label h2{
+	color: #333;
+	font-size: 13px;
+}
+.mxsel label h3{
+	color: #333;
+	font-size: 13px;
+}
+.mxsel label h4{
+	color: #333;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+#mxright{
+	position: absolute;
+	top:25px;
+	right: 10px;
+	color: #333;
+}
+#mxclick{
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	color: #000;
+	font-weight: bolder;
+	font-family: '微软雅黑';
+}
+.mxfot{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+#mxquan{
+	width: 50%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	background-color: darkorange;
+	float: left;
+}
+#mxyidu{
+	width: 50%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	background-color: red;
+	float: left;
+}
+.show{
+	display: block;
+}

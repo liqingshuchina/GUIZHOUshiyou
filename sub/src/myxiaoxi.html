@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/myxiaoxi.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的消息</h1>
+			<div id="xselect">
+				选择
+			</div>
+		</header>
+		
+		<div class="mui-input-row mui-checkbox mui-left mxsel">
+		 <label>
+			 <h2>2019年二季度注册赠8元线下非油劵</h2>
+			 <h4>2019-05-05 16:42:47</h4>
+			 <h3>恭喜你获得电子劵一张</h3>
+		 </label>
+			<i class="mui-icon mui-icon-arrowright mui-pull-right" id="mxright"></i>
+		  <input name="checkbox" type="checkbox">
+		</div>
+		<!-- <div class="mui-input-row mui-checkbox mui-left mxsel">
+		 <label>
+			 <h2>2019年二季度注册赠8元线下非油劵</h2>
+			 <h4>2019-05-05 16:42:47</h4>
+			 <h3>恭喜你获得电子劵一张</h3>
+		 </label>
+			<i class="mui-icon mui-icon-arrowright mui-pull-right" id="mxright"></i>
+		  <input name="checkbox" type="checkbox" id="mxcheck">
+		</div> -->
+		<div id="mxclick">点击或上拉加载更多</div>
+		<div class="mxfot">
+			<div id="mxquan">全选</div>
+			<div id="mxyidu">设为已读</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			var quan=document.querySelector("#mxquan");
+			var yidu=document.getElementById("mxyidu");
+			var check=document.querySelector("input[name='checkbox']");
+			var chk=document.getElementById("#mxcheck");
+			var mshow=document.querySelector(".mxfot");
+			var mxxuan=document.querySelector("#xselect");
+			var mxsel=document.querySelector(".mxsel");
+			
+			quan.onclick=function(){
+				check.checked=true;
+			}
+			yidu.onclick=function(){
+				if(check.checked==true){
+					atip("已设置");
+					mxsel.classList.add("mxbian");
+					check.checked=false;
+					return;
+				}
+				if(check.checked==false){
+					atip("请选择内容");
+					return;
+				}
+			}
+			mxxuan.onclick=function(){
+				mshow.classList.add("show");
+				this.innerHTML="取消";
+				
+			}
+			
+			
+				
+				function atip(info){
+					mui.toast(info)
+				}
+			
+		</script>
+	</body>
+
+</html>
