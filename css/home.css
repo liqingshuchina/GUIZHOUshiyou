@@ -234,3 +234,103 @@ li{
 	font-size: 30px;
 	margin-top: 5px;
 }
+.hcar{
+	width: 100%;
+	/* height: 250px; */
+	padding:10px 0 10px 0;
+	background-color: #fff;
+}
+.hcar h2{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+}
+.hcar h3{
+	width: 100%;
+	/* height: 60px; */
+	/* display: flex; */
+}
+.hwehu{
+	
+	background-color: #000;
+	/* float: left; */
+}
+.hcar h3 button{
+	float:left
+}
+	
+.hcar h2 img{
+	display: block;
+	height: 190px;
+	width: 100%;
+}
+.hjian{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	
+}
+.hjian li{
+	width: 48%;
+	height: 120px;
+	line-height: 100px;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bolder;
+	background-color: pink;
+}
+.hshejian{
+	margin-top: 10px;
+	width: 100%;
+	height: 120px;
+}
+.hshejian img{
+	display: block;
+	width: 100%;
+	height: 120px;
+}
+.hzijia{
+
+	width: 100%;
+	height: 120px;
+}
+.hzijia img{
+	display: block;
+	width: 100%;
+	height: 120px;
+}
+	/*公告*/
+	.swiper-container {
+      width: 100%;
+      /* height: 120px; */
+		position: relative;
+		margin-bottom: 200px;
+    }
+    .swiper-slide {
+      
+      font-size: 18px;
+      background: #eee;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+	.hzuixin{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 999;
+	}
+	
+	 
+	 
